@@ -75,6 +75,10 @@ main .pasta__wrap .pasta__box img {
 }
 
 footer {
+  padding: 70px 0;
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
   color: #848d9b;
 }
 footer .container {
