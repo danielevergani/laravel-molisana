@@ -1,0 +1,27 @@
+header{
+
+    width: $main_container;
+    margin: auto;
+
+    .logo{
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li.active{
+            background-color: $secondary_color;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            margin: 0 15px;
+        }
+
+    }
+}
