@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 header {
   width: 1200px;
   margin: auto;
@@ -24,4 +30,22 @@ header ul a {
   color: black;
   font-size: 25px;
   margin: 0 15px;
+}
+
+main {
+  background-image: url("../img/fondo-pag-speciali.jpg");
+}
+main .pasta__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .pasta__wrap .pasta__box {
+  width: calc(( 100% / 3 ) - 10px);
+}
+main .pasta__wrap .pasta__box:not(:last-child) {
+  margin-right: 10px;
+}
+main .pasta__wrap .pasta__box img {
+  width: 100%;
 }

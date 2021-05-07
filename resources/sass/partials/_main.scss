@@ -1,0 +1,21 @@
+main{
+    background-image: url('../img/fondo-pag-speciali.jpg');
+
+    .pasta__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .pasta__box{
+            width: calc(( 100% / 3 ) - 10px);
+
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

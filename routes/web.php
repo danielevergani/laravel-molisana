@@ -138,5 +138,26 @@ Route::get('/', function () {
         ]
     ];
 
-    return view('home');
+    $lunga = [];
+    $corta = [];
+    $cortissima = [];
+
+    foreach($data as $element){
+        if( $element["tipo"] == "lunga"){
+            $lunga[] = $element;
+        }
+        elseif( $element["tipo"] == "corta"){
+            $corta[] = $element;
+        }
+        elseif( $element["tipo"] == "cortissima"){
+            $cortissima[] = $element;
+        }
+
+    }
+
+    return view('home',[
+        'lunga' => $lunga,
+        'corta' => $corta,
+        'cortissima' => $cortissima
+    ]);
 });
