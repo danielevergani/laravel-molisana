@@ -28,7 +28,7 @@
         <section>
             <div class="container">
 
-                <h2>Le Lunghe</h2>
+                <h2>LE LUNGHE</h2>
 
                 <div class="pasta__wrap">
 
@@ -47,7 +47,7 @@
         <section>
             <div class="container">
 
-                <h2>Le Corte</h2>
+                <h2>LE CORTE</h2>
 
                 <div class="pasta__wrap">
 
@@ -67,7 +67,7 @@
         <section>
             <div class="container">
 
-                <h2>Le cortissime</h2>
+                <h2>LE CORTISSIME</h2>
 
                 <div class="pasta__wrap">
 

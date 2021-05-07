@@ -1,6 +1,6 @@
 header{
 
-    width: $main_container;
+    width: 100%;
     margin: auto;
 
     .logo{
@@ -11,6 +11,10 @@ header{
         list-style: none;
         display: flex;
         justify-content: center;
+
+        li{
+            padding: 10px 0;
+        }
 
         li.active{
             background-color: $secondary_color;
