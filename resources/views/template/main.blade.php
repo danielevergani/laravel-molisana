@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>@yield('title')</title>
+        @yield('css');
+
     </head>
     <body>
         {{-- header --}}
@@ -13,7 +15,7 @@
         {{-- fine header --}}
 
         <main>
-            @yield('content');
+            @yield('content')
         </main>
 
         {{-- footer --}}

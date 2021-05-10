@@ -1,12 +1,22 @@
 @extends('template/main')
 
+@section('css')
+<style>
+    
+    main{
+        background-image: none;
+    }
+
+</style>
+@endsection
+
     @section('content')
     <div class="prodotto">
-        <h1> {{$pasta['titolo']}} </h1>
+        <h1 class="prod__name"> {{$pasta['titolo']}} </h1>
         <img src="{{$pasta['src-h']}}" alt="">
         <img src="{{$pasta['src-p']}}" alt="{{$pasta['titolo']}}">
-        <p>{!!$pasta['descrizione']!!}</p>
-
-
+        <div class="description">
+            <p>{!!$pasta['descrizione']!!}</p>
+        </div>
     </div>
     @endsection

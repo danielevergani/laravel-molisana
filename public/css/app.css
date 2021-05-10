@@ -46,7 +46,6 @@ header ul a {
 
 main {
   background-image: url("../img/fondo-pag-speciali.jpg");
-  padding-top: 20px;
 }
 main .pasta__wrap {
   display: flex;
@@ -71,6 +70,40 @@ main .pasta__wrap .pasta__box {
 }
 main .pasta__wrap .pasta__box img {
   width: 100%;
+}
+
+.prodotto {
+  position: relative;
+  background-color: #b7dae5;
+}
+.prodotto .prod__name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+  font-size: 40px;
+}
+@media screen and (max-width: 992px) {
+  .prodotto .prod__name {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .prodotto .prod__name {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+.prodotto img {
+  width: 100%;
+}
+.prodotto .description p {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 40px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 footer {
