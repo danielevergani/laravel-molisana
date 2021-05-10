@@ -20,10 +20,10 @@
         <img src="{{$pasta['src-h']}}" alt="">
         <div class="arrows">
             <div class="arrow prev">
-                <i class="fas fa-chevron-left"></i>
+                <a href="{{route('prodotti', ['id' => $prev ])}}"><i class="fas fa-chevron-left"></i></a>
             </div>
             <div class="arrow next">
-                <i class="fas fa-chevron-right"></i>
+                <a href="{{route('prodotti', ['id' => $next ])}}"><i class="fas fa-chevron-right"></i></a>
             </div>
         </div>
         <img src="{{$pasta['src-p']}}" alt="{{$pasta['titolo']}}">

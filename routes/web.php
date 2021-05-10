@@ -298,7 +298,12 @@ Route::get('/prodotti/{id}', function ($id){
 
     $pasta = $data[$id];
 
+    $next = $id + 1;
+    $prev = $id - 1;
+
     return view('prodotti', [
-        'pasta' => $pasta
+        'pasta' => $pasta,
+        'next' => $next, 
+        'prev' => $prev
     ]);
 })->where('id', '[0-9]+')-> name('prodotti');
